@@ -97,7 +97,7 @@ $ openssl asn1parse -inform PEM < key/rsa.pem
  1061:d=1  hl=3 l= 129 prim: INTEGER           :9401971EB1B7F8BEF78177CAEF8F2AA02FFF13DEC476D8CF648980AF812CB3AD934DF3A2DD206E9E046F997B5663DB3F8248A665AE812F67A5C845A5C252E59655F68D92DB2C38D16C67449A3130225CC5E83964BF9122B86CF3274E8C8AB56E395A564A0B48DC62FE22BF28BE26C7ABECF3ECC18F31076CAAA0120D95EF3E7F
 ```
 
-Here is the structure of above information:
+Here is the structure of above information. I get it from this [link](https://crypto.stackexchange.com/questions/21102/what-is-the-ssl-private-key-file-format).
 
 ```text
 RSAPrivateKey ::= SEQUENCE {
