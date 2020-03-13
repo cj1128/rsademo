@@ -9,12 +9,13 @@ You need to know what `p`, `q`, `n`, `e` and `d` mean and how RSA uses them.
 ## Install
 
 ```bash
-go get -v github.com/cj1128/rsademo
+go get -v github.com/cj1128/rsa-demo
 ```
 
 ## Usage
 
 ```bash
+$ rsademo --help
 Usage of rsademo:
   -parse <key_file>
       parse numbers from open ssh public/private key file
