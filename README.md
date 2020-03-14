@@ -1,6 +1,6 @@
 # RSADemo
 
-A simple tool to demonstrate RSA algorithm.
+A simple tool to demonstrate RSA algorithm. [RSA 的原理与实现](https://cjting.me/2020/03/13/rsa/).
 
 First, you need to have some basic knowledge about [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem).
 
