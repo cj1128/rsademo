@@ -2,7 +2,7 @@
 
 A simple tool to demonstrate RSA algorithm. [RSA 的原理与实现](https://cjting.me/2020/03/13/rsa/).
 
-First, you need to have some basic knowledge about [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem).
+First, you need to have some basic knowledge about [RSA](https://en.wikipedia.org/wiki/RSA_\(cryptosystem\)).
 
 You need to know what `p`, `q`, `n`, `e` and `d` mean and how RSA uses them.
 
@@ -36,9 +36,11 @@ e.g.
 
 ## Parse
 
-Parse numbers (n, e, d, p, q) from public/private key file.
+Parse numbers (`n`, `e`, `d`, `p`, `q`) from public/private key file.
 
-Supported formats are _openssh public key format_ whose content is like `ssh-rsa ....` and _openssh private key format_ whose content is like `-----BEGIN OPENSSH PRIVATE KEY-----`.
+Supported formats are _openssh public key format_ whose content is like `ssh-rsa ....` and _openssh private key format_ whose content is like `-----BEGIN OPENSSH PRIVATE KEY----- ...`.
+
+First, let's use `ssh-keygen` to generate a pair of RSA keys. `mkdir key && ssh-keygen -f key/rsa`.
 
 Let's see how to get the numbers out.
 
@@ -65,6 +67,8 @@ Useful links:
 - [The OpenSSH Private Key Format](https://coolaj86.com/articles/the-openssh-private-key-format/)
 
 ## Parse with OpenSSL
+
+We can of course use `openssl` to do the parsing.
 
 Use `openssl` to parse the public key:
 
@@ -179,7 +183,7 @@ Tada! 🎉 We get our secret `1024` back.
 
 ## Encrypt/Decrypt with OpenSSL
 
-We can use `openssl` to perform RSA encryption/decryption.
+We can also use `openssl` to perform RSA encryption/decryption.
 
 ```bash
 # generate our secret file
@@ -197,5 +201,5 @@ This is our secret message.
 # Tada 🎉
 ```
 
-This is just for demonstration. If you need to send a file safely, you should use [age](https://github.com/FiloSottile/age) or PGP.
+NOTE: **This is just for demonstration. If you need to send a file safely, you should use [age](https://github.com/FiloSottile/age) or PGP.**
 
