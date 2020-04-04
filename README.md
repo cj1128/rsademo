@@ -9,7 +9,7 @@ You need to know what `p`, `q`, `n`, `e` and `d` mean and how RSA uses them.
 ## Install
 
 ```bash
-go get -v github.com/cj1128/rsa-demo
+go get -v github.com/cj1128/rsademo
 ```
 
 ## Usage

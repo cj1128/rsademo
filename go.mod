@@ -1,4 +1,4 @@
-module cjting.me/rsademo
+module github.com/cj1128/rsademo
 
 go 1.14
 
